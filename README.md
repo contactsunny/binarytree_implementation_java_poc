@@ -42,7 +42,7 @@ For our example, we'll consider the following binary tree, which is a very simpl
 
 ![Simple Binary Tree Illustration](./images/SImple_Binary_Tree.png "Simple Binary Tree")
 
-The following traversals will are for this example binary tree:
+The following traversals are for this example binary tree:
 
 ### Pre order traversing:
 
