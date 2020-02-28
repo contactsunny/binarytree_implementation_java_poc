@@ -1,9 +1,9 @@
 package com.contactsunny.poc.binarytree_implementation_java_poc.binarytree;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class BinaryTreeTest {
 
@@ -12,7 +12,7 @@ public class BinaryTreeTest {
     private static final String IN_ORDER_TRAVERSAL_EXPECTED_OUTPUT = "4 2 5 1 6 3 7 ";
     private static final String POST_ORDER_TRAVERSAL_EXPECTED_OUTPUT = "4 5 2 6 7 3 1 ";
 
-    @BeforeEach
+    @Before
     public void beforeEach() {
         binaryTree = new BinaryTree<>();
 
@@ -30,19 +30,19 @@ public class BinaryTreeTest {
     }
 
     @Test
-    public void test_traverseInOrder_returnsExpectedOutput() {
+    public void testTraverseInOrderReturnsExpectedOutput() {
         String actualInOrderTraversalOutput = BinaryTree.traverseInOrder(binaryTree.getRootNode(), null);
         assertEquals(IN_ORDER_TRAVERSAL_EXPECTED_OUTPUT, actualInOrderTraversalOutput);
     }
 
     @Test
-    public void test_traversePreOrder_returnsExpectedOutput() {
+    public void testTraversePreOrderReturnsExpectedOutput() {
         String actualInOrderTraversalOutput = BinaryTree.traversePreOrder(binaryTree.getRootNode(), null);
         assertEquals(PRE_ORDER_TRAVERSAL_EXPECTED_OUTPUT, actualInOrderTraversalOutput);
     }
 
     @Test
-    public void test_traversePostOrder_returnsExpectedOutput() {
+    public void testTraversePostOrderReturnsExpectedOutput() {
         String actualInOrderTraversalOutput = BinaryTree.traversePostOrder(binaryTree.getRootNode(), null);
         assertEquals(POST_ORDER_TRAVERSAL_EXPECTED_OUTPUT, actualInOrderTraversalOutput);
     }
