@@ -1,4 +1,4 @@
-package com.contactsunny.poc.BinaryTree_Implementation_Java_POC.binaryTree;
+package com.contactsunny.poc.binarytree_implementation_java_poc.binarytree;
 
 public class Node<T> {
 
@@ -12,10 +12,6 @@ public class Node<T> {
 
     public T getData() {
         return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
     }
 
     public Node<T> getLeft() {
